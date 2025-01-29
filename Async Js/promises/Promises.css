@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+   background-image: linear-gradient(to bottom right, rgba(255, 113, 113, 0),rgb(55, 153, 192));
+   height: 100vh;
+   text-align: center;
+   position: relative;
+}
+.buttonDiv{
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.button{
+    padding: 7px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3d196d;
+    color: white;
+}
+.button:hover{
+    scale: 1.03;
+    background-color: #5d3a85;
+}
+.displayDiv{
+    position: absolute;
+    background-color: white;
+    margin-top: 20px;
+    top: 20%;
+    left: 20%;
+    padding: 10px;
+    display: none;
+    width: 60%;
+    height: 70vh;
+    overflow-y: auto;
+    transition: left 1s ease;
+    text-align: left;
+    font-size: 20px;
+}
+.movedButton{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.displayDiv::-webkit-scrollbar {
+    width: 12px; 
+    height: 12px; 
+}
+
+.displayDiv::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.displayDiv::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 10px; 
+    border: 3px solid #f1f1f1;
+}
+
+.displayDiv::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
